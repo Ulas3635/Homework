@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Assignment 2</title>
+    <style>
+        .form-area {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: left;
+        }
+
+        .input-contact {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 7px;
+            border: blue solid 1px;
+            border-radius: 7px;
+            width: 250px;
+        }
+
+            .input-contact:hover {
+                border: blue solid 1px;
+            }
+
+        #contact-title {
+            margin-bottom: 5px;
+        }
+
+        .btn-contact {
+            padding: 7px;
+            width: 250px;
+            background-color: black;
+            color: white;
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 7px;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <section>
+        <form action="/contact.html" method="post" class="form-area">
+            <h1 id="contact-title">Bizimle iletişime geçin</h1>
+            <p>Lütfen aşağıdaki formu eksiksiz doldurun</p>
+            <style>
+                h2 {
+                    color: red;
+                }
+            </style>
+            <h2> Dikkat! Aşağıda belirtilen alanlar doldurulması zorunlu alanlardır</h2>
+            <ol>
+                <li>Başlık</li>
+                <li>Adres</li>
+                <li>Telefon Numarası</li>
+                <li>E-Posta Adresi</li>
+            </ol>
+            <input type="text" class="input-contact" name="name" placeholder="isiminiz..">
+            <input type="text" class="input-contact" name="surname" placeholder="soyisminiz..">
+            <input type="email" class="input-contact" name="email" placeholder="e-posta adresiniz..">
+            <input type="date" class="input-contact" name="birthday" placeholder="doğum tarihiniz..">
+            <input type="phone" class="input-contact" name="telephone" placeholder="telefon numaranız..">
+            <textarea class="input-contact" placeholder="mesajınız.." rows="5"></textarea>
+
+            <button class="btn-contact" type="submit">Gönder</button> </br>
+
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="300" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Ya%C5%9Far%20Kemal%20Mahallesi%206002%20sokak%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.zipcodewiki.net">zipcodewiki</a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 400px;
+                            width: 300px;
+                        }
+                    </style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 400px;
+                            width: 300px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+</body>
+</html>
